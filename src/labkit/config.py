@@ -130,9 +130,9 @@ class LoraSpec:
 
 SPECS: dict[str, LoraSpec] = {
     "correct": LoraSpec(
-        key="correct", r=16, alpha=32, target="text-linear", lr=LORA_LR,
+        key="correct", r=32, alpha=64, target="text-linear", lr=LORA_LR,
         load_in_4bit=False,
-        label="all-linear · r=16 · LR 10x · 16-bit",
+        label="all-linear · r=32 · LR 10x · 16-bit",
         teaches="The deck's low-regret configuration (§11).",
     ),
     # r=None => resolved at runtime by modeling.matched_rank() so this run sits on the
@@ -146,15 +146,15 @@ SPECS: dict[str, LoraSpec] = {
                 "parameter count*. If rank were the lever, this would win.",
     ),
     "wrong_lr": LoraSpec(
-        key="wrong_lr", r=16, alpha=32, target="text-linear", lr=FULL_FT_LR,
+        key="wrong_lr", r=32, alpha=64, target="text-linear", lr=FULL_FT_LR,
         load_in_4bit=False,
-        label="all-linear · r=16 · LR 1x (full-FT scale) · 16-bit",
+        label="all-linear · r=32 · LR 1x (full-FT scale) · 16-bit",
         teaches="Mistake #2 (§11.3): a full-fine-tune learning rate applied to LoRA.",
     ),
     "qlora": LoraSpec(
-        key="qlora", r=16, alpha=32, target="text-linear", lr=LORA_LR,
+        key="qlora", r=32, alpha=64, target="text-linear", lr=LORA_LR,
         load_in_4bit=True,
-        label="all-linear · r=16 · LR 10x · 4-bit QLoRA",
+        label="all-linear · r=32 · LR 10x · 4-bit QLoRA",
         teaches="The vendor says do NOT use QLoRA on Qwen3.5 (§13). Measure the cost "
                 "yourself instead of taking either side on faith.",
     ),

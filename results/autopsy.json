@@ -1,0 +1,9 @@
+{
+  "runs": {
+    "correct": {"target": 0.97, "format": 1.0, "latency_ms": 1543.3},
+    "attn_only": {"target": 0.97, "format": 1.0, "latency_ms": 977.2},
+    "wrong_lr": {"target": 0.0, "format": 0.0, "latency_ms": 5599.9},
+    "qlora": {"target": 0.94, "format": 1.0, "latency_ms": 1918.5}
+  },
+  "note": "Target và format từ NB5 §4"
+}

@@ -1,0 +1,13 @@
+{
+  "best_cases": [
+    {"i": 22, "ticket": "Cho mình hỏi, mình đặt máy xay sinh tố mã đơn OD468960...", "ft_score": 1.0, "ft_pred": {"intent": "doi_tra", "urgency": "cao", "product": "máy xay sinh tố", "sentiment": "tich_cuc"}},
+    {"i": 23, "ticket": "Chào shop, mình đặt nồi chiên không dầu mã đơn VN558606...", "ft_score": 1.0, "ft_pred": {"intent": "van_chuyen", "urgency": "trung_binh", "product": "nồi chiên không dầu", "sentiment": "trung_tinh"}},
+    {"i": 24, "ticket": "Alo shop, mình đặt máy xay sinh tố mã đơn VN931861...", "ft_score": 1.0, "ft_pred": {"intent": "san_pham_loi", "urgency": "cao", "product": "máy xay sinh tố", "sentiment": "tieu_cuc"}}
+  ],
+  "worst_cases": [
+    {"i": 3, "ticket": "Cho mình hỏi, mình đặt bình giữ nhiệt mã đơn VN804124...", "ft_score": 0.75, "ft_pred": {"intent": "hoan_tien", "urgency": "trung_binh", "product": "bình giữ nhiệt", "sentiment": null}},
+    {"i": 5, "ticket": "Shop ơi, mình đặt nồi chiên không dầu mã đơn DH249548...", "ft_score": 0.75, "ft_pred": {"intent": "san_pham_loi", "urgency": "trung_binh", "product": "nồi chiên không dầu", "sentiment": null}},
+    {"i": 12, "ticket": "Shop ơi, mình đặt áo khoác gió mã đơn VN613097...", "ft_score": 0.75, "ft_pred": {"intent": "san_pham_loi", "urgency": "trung_binh", "product": "áo khoác gió", "sentiment": null}}
+  ],
+  "note": "Các ca thua đều thiếu trường sentiment trong JSON output"
+}

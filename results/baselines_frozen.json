@@ -1,0 +1,25 @@
+{
+  "tier": "T4",
+  "model": "unsloth/Qwen3.5-4B",
+  "baseline_a": {
+    "target": 0.0,
+    "regression": 0.7911111111111111,
+    "format": 0.0,
+    "latency_ms": 3449.9100617999966,
+    "n": 25,
+    "extra": {}
+  },
+  "baseline_b": {
+    "target": 0.76,
+    "regression": 0.7911111111111111,
+    "format": 1.0,
+    "latency_ms": 1043.0149446799942,
+    "n": 25,
+    "extra": {}
+  },
+  "optimized_prompt_sha": "719e74d3b6232053",
+  "n_target": 25,
+  "n_regression": 15,
+  "eval_limit": 25,
+  "smoke_mode": true
+}

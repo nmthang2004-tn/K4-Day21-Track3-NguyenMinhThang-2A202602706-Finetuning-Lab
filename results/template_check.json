@@ -1,0 +1,4 @@
+{
+  "keeps_think_block": false,
+  "note": "Model Qwen3.5-4B không tạo think block trong inference"
+}
